@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="lotus_flower_with_lillypad.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
+      <button class="Hotspot" slot="hotspot-1" data-position="0.189321841476291m -0.09369133336433112m 0.1258811648587834m" data-normal="0m 0.9999999999999991m 4.3711390507183965e-8m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">蓮葉</div>
+      </button><button class="Hotspot" slot="hotspot-2" data-position="-0.12364171129452754m 0.04877013407716903m 0.023838641891644582m" data-normal="-0.513924098352735m 0.06289346971899232m 0.8555269911575173m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">花瓣</div>
+      </button><button class="Hotspot" slot="hotspot-3" data-position="0.00455055730987429m 0.01427623395156706m -0.021428547861887876m" data-normal="0.13509353171951555m 0.9157415101824391m -0.3783744497403783m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">花蕊(在裡面)</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+  </body>
+</html>
